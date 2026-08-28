@@ -15,7 +15,16 @@ def load_data():
     df = pd.read_csv('data/remittance_transactions.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     df['Month'] = df['Date'].dt.to_period('M')
-    return df
+
+    # Load reconciliation data
+    recon_df = pd.read_csv('data/reconciliation_records.csv')
+    recon_df['Recon Date'] = pd.to_datetime(recon_df['Recon Date'])
+
+    # Load query data
+    query_df = pd.read_csv('data/query_management.csv')
+    query_df['Query Date'] = pd.to_datetime(query_df['Query Date'])
+
+    return df, recon_df, query_df
 
 def create_kpi_cards(df):
     """Create KPI metrics"""
@@ -244,6 +253,117 @@ def create_sla_breaches_by_corridor(df):
         title="SLA Breach Rate by Corridor (%)",
         xaxis_title="Corridor",
         yaxis_title="SLA Breach %",
+        height=400,
+    )
+    return fig
+
+def create_reconciliation_status(recon_df):
+    """Create reconciliation status breakdown"""
+    status_data = recon_df['Status'].value_counts()
+    colors = {'Matched': '#70AD47', 'Unmatched': '#FFC000', 'Duplicate': '#C00000'}
+
+    fig = go.Figure(data=[
+        go.Bar(
+            x=status_data.index,
+            y=status_data.values,
+            marker=dict(color=[colors.get(s, '#999') for s in status_data.index]),
+            text=status_data.values,
+            textposition='auto',
+        )
+    ])
+    fig.update_layout(
+        title="Reconciliation Status",
+        xaxis_title="Status",
+        yaxis_title="Count",
+        height=400,
+    )
+    return fig
+
+def create_issue_breakdown(recon_df):
+    """Create issue type breakdown"""
+    unmatched = recon_df[recon_df['Status'] != 'Matched']
+    issue_data = unmatched['Issue Type'].value_counts()
+
+    fig = go.Figure(data=[
+        go.Bar(
+            x=issue_data.values,
+            y=issue_data.index,
+            orientation='h',
+            marker=dict(color='#FFC000'),
+            text=issue_data.values,
+            textposition='auto',
+        )
+    ])
+    fig.update_layout(
+        title="Reconciliation Issues Breakdown",
+        xaxis_title="Count",
+        yaxis_title="Issue Type",
+        height=400,
+    )
+    return fig
+
+def create_query_status(query_df):
+    """Create query status breakdown"""
+    status_data = query_df['Status'].value_counts()
+    colors = {'Resolved': '#70AD47', 'Closed': '#3b82f6', 'In Progress': '#FFC000',
+              'Escalated': '#C00000', 'Pending': '#94a3b8'}
+
+    fig = go.Figure(data=[
+        go.Bar(
+            x=status_data.index,
+            y=status_data.values,
+            marker=dict(color=[colors.get(s, '#999') for s in status_data.index]),
+            text=status_data.values,
+            textposition='auto',
+        )
+    ])
+    fig.update_layout(
+        title="Query Management Status",
+        xaxis_title="Status",
+        yaxis_title="Count",
+        height=400,
+    )
+    return fig
+
+def create_query_type_breakdown(query_df):
+    """Create query type breakdown"""
+    type_data = query_df['Query Type'].value_counts().head(8)
+
+    fig = go.Figure(data=[
+        go.Bar(
+            x=type_data.values,
+            y=type_data.index,
+            orientation='h',
+            marker=dict(color='#3b82f6'),
+            text=type_data.values,
+            textposition='auto',
+        )
+    ])
+    fig.update_layout(
+        title="Top Query Types",
+        xaxis_title="Count",
+        yaxis_title="Query Type",
+        height=400,
+    )
+    return fig
+
+def create_query_resolution_time(query_df):
+    """Create query resolution time trend"""
+    resolution_by_type = query_df.groupby('Query Type')['Days to Resolve'].mean().sort_values(ascending=False).head(8)
+
+    fig = go.Figure(data=[
+        go.Bar(
+            x=resolution_by_type.index,
+            y=resolution_by_type.values,
+            marker=dict(color='#10b981'),
+            text=[f'{v:.1f}d' for v in resolution_by_type.values],
+            textposition='auto',
+        )
+    ])
+    fig.update_layout(
+        title="Average Resolution Time by Query Type",
+        xaxis_title="Query Type",
+        yaxis_title="Days to Resolve",
         height=400,
     )
     return fig
@@ -495,16 +615,16 @@ def generate_html_dashboard(df, kpis):
                     <div class="kpi-value success">{kpis['completed_pct']:.1f}%</div>
                 </div>
                 <div class="kpi-card">
-                    <div class="kpi-label">Exception Rate</div>
-                    <div class="kpi-value warning">{kpis['exception_rate']:.2f}%</div>
+                    <div class="kpi-label">Reconciliation Match Rate</div>
+                    <div class="kpi-value success">{kpis['matched_rate']:.1f}%</div>
                 </div>
                 <div class="kpi-card">
-                    <div class="kpi-label">Avg Processing Time</div>
-                    <div class="kpi-value">{kpis['avg_processing_time']:.1f}h</div>
+                    <div class="kpi-label">Queries Resolved</div>
+                    <div class="kpi-value">{kpis['resolved_queries']}</div>
                 </div>
                 <div class="kpi-card">
-                    <div class="kpi-label">SLA Breaches</div>
-                    <div class="kpi-value danger">{kpis['sla_breach_count']}</div>
+                    <div class="kpi-label">Open Queries</div>
+                    <div class="kpi-value warning">{kpis['open_queries']}</div>
                 </div>
             </div>
 
@@ -541,6 +661,29 @@ def generate_html_dashboard(df, kpis):
                 </div>
             </div>
 
+            <div class="charts-section" style="margin-top: 50px; border-top: 2px solid #334155; padding-top: 40px;">
+                <div class="chart-container full-width">
+                    <div style="text-align: center; font-size: 1.4em; font-weight: 700; color: #e2e8f0; margin-bottom: 30px;">
+                        📋 RECONCILIATION & QUERY MANAGEMENT
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div id="recon-status"></div>
+                </div>
+                <div class="chart-container">
+                    <div id="issue-breakdown"></div>
+                </div>
+                <div class="chart-container">
+                    <div id="query-status"></div>
+                </div>
+                <div class="chart-container">
+                    <div id="query-types"></div>
+                </div>
+                <div class="chart-container full-width">
+                    <div id="query-time"></div>
+                </div>
+            </div>
+
             <footer>
                 <p><strong>HDFC Bank FX Remittance Operations Dashboard</strong></p>
                 <p>International Remittance Analytics | Data source: Simulated transaction dataset</p>
@@ -554,10 +697,17 @@ def generate_html_dashboard(df, kpis):
 
 def main():
     print("Loading data...")
-    df = load_data()
+    df, recon_df, query_df = load_data()
 
     print("Computing KPIs...")
     kpis = create_kpi_cards(df)
+
+    # Add reconciliation and query KPIs
+    kpis['matched_rate'] = (len(recon_df[recon_df['Status'] == 'Matched']) / len(recon_df) * 100)
+    kpis['open_queries'] = len(query_df[query_df['Status'].isin(['Pending', 'In Progress'])])
+    kpis['resolved_queries'] = len(query_df[query_df['Status'] == 'Resolved'])
+    kpis['escalated_queries'] = len(query_df[query_df['Status'] == 'Escalated'])
+    kpis['avg_resolution_time'] = query_df['Days to Resolve'].mean()
 
     print("Creating charts...")
     charts = {
@@ -571,6 +721,11 @@ def main():
         'channel_perf': create_channel_performance(df),
         'exception': create_exception_breakdown(df),
         'sla': create_sla_breaches_by_corridor(df),
+        'recon_status': create_reconciliation_status(recon_df),
+        'issue_breakdown': create_issue_breakdown(recon_df),
+        'query_status': create_query_status(query_df),
+        'query_types': create_query_type_breakdown(query_df),
+        'query_time': create_query_resolution_time(query_df),
     }
 
     print("Generating HTML...")
@@ -588,6 +743,11 @@ def main():
         'channel-perf': charts['channel_perf'].to_html(include_plotlyjs=False, div_id='channel-perf'),
         'exception-chart': charts['exception'].to_html(include_plotlyjs=False, div_id='exception-chart'),
         'sla-chart': charts['sla'].to_html(include_plotlyjs=False, div_id='sla-chart'),
+        'recon-status': charts['recon_status'].to_html(include_plotlyjs=False, div_id='recon-status'),
+        'issue-breakdown': charts['issue_breakdown'].to_html(include_plotlyjs=False, div_id='issue-breakdown'),
+        'query-status': charts['query_status'].to_html(include_plotlyjs=False, div_id='query-status'),
+        'query-types': charts['query_types'].to_html(include_plotlyjs=False, div_id='query-types'),
+        'query-time': charts['query_time'].to_html(include_plotlyjs=False, div_id='query-time'),
     }
 
     # Extract just the script portion from each chart

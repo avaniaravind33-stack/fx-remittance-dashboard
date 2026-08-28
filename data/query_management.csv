@@ -1,0 +1,201 @@
+Query ID,Query Type,Transaction ID,Query Date,Priority,Status,Resolution Date,Days to Resolve,Resolution Notes
+Q00001,Payment Delay,HDFC2026276105,2024-05-16,Medium,Closed,2024-05-20,4,"Checked with bank, payment en route"
+Q00002,FX Rate Query,HDFC2026630000,2024-11-10,Low,Resolved,2024-11-19,9,"Current rate 82.02, explained to customer"
+Q00003,Compliance Check,HDFC2026706388,2024-08-15,Medium,Resolved,2024-08-24,9,"Verification completed, transaction approved"
+Q00004,Compliance Check,HDFC2026867911,2024-05-22,Medium,In Progress,2024-05-23,1,"Verification completed, transaction approved"
+Q00005,Payment Delay,HDFC2026900345,2024-09-26,Medium,Resolved,2024-09-27,1,"Checked with bank, payment en route"
+Q00006,Document Request,HDFC2026162492,2024-02-11,Low,Resolved,2024-02-15,4,Documents provided to customer
+Q00007,FX Rate Query,HDFC2026424365,2024-11-12,Low,In Progress,2024-11-14,2,"Current rate 84.82, explained to customer"
+Q00008,Compliance Check,HDFC2026855064,2024-06-29,Medium,Closed,2024-07-05,6,"Verification completed, transaction approved"
+Q00009,FX Rate Query,HDFC2026622469,2024-09-21,Low,Escalated,2024-09-25,4,"Current rate 82.13, explained to customer"
+Q00010,Duplicate Charge,HDFC2026532352,2024-04-06,Medium,Closed,2024-04-14,8,Duplicate identified and refunded
+Q00011,Missing Credit,HDFC2026234143,2024-06-24,Medium,Closed,2024-06-30,6,Amount credited to account after investigation
+Q00012,Amount Discrepancy,HDFC2026225549,2024-08-27,Low,In Progress,2024-08-28,1,"Discrepancy resolved, documentation provided"
+Q00013,Missing Credit,HDFC2026408857,2024-12-08,High,Resolved,2024-12-17,9,Amount credited to account after investigation
+Q00014,Missing Credit,HDFC2026720597,2024-12-16,Medium,Escalated,2024-12-23,7,Amount credited to account after investigation
+Q00015,FX Rate Query,HDFC2026707725,2024-10-09,Low,Pending,2024-10-10,1,"Current rate 62.81, explained to customer"
+Q00016,Missing Credit,HDFC2026378927,2024-02-16,Medium,In Progress,2024-02-18,2,Amount credited to account after investigation
+Q00017,Compliance Check,HDFC2026380310,2024-07-27,High,Closed,2024-07-28,1,"Verification completed, transaction approved"
+Q00018,Settlement Inquiry,HDFC2026328417,2024-12-11,Low,Resolved,2024-12-20,9,"Settlement confirmed, documentation sent"
+Q00019,Settlement Inquiry,HDFC2026977787,2024-01-21,Medium,Resolved,2024-01-31,10,"Settlement confirmed, documentation sent"
+Q00020,Settlement Inquiry,HDFC2026126773,2024-11-09,Medium,In Progress,2024-11-12,3,"Settlement confirmed, documentation sent"
+Q00021,Document Request,HDFC2026682235,2024-12-05,Low,Resolved,2024-12-11,6,Documents provided to customer
+Q00022,Document Request,HDFC2026435581,2024-09-06,Low,Resolved,2024-09-07,1,Documents provided to customer
+Q00023,Duplicate Charge,HDFC2026138903,2024-05-25,Medium,Resolved,2024-06-04,10,Duplicate identified and refunded
+Q00024,Document Request,HDFC2026400761,2024-05-05,Low,Resolved,2024-05-10,5,Documents provided to customer
+Q00025,Document Request,HDFC2026735082,2024-09-04,Low,Closed,2024-09-12,8,Documents provided to customer
+Q00026,Missing Credit,HDFC2026427208,2024-01-10,Medium,Resolved,2024-01-11,1,Amount credited to account after investigation
+Q00027,FX Rate Query,HDFC2026315811,2024-06-22,Low,Closed,2024-06-24,2,"Current rate 103.13, explained to customer"
+Q00028,Document Request,HDFC2026584371,2024-03-19,Low,Escalated,2024-03-26,7,Documents provided to customer
+Q00029,Compliance Check,HDFC2026922794,2024-02-08,High,In Progress,2024-02-11,3,"Verification completed, transaction approved"
+Q00030,Document Request,HDFC2026597084,2024-12-22,Low,In Progress,2024-12-24,2,Documents provided to customer
+Q00031,Missing Credit,HDFC2026836138,2024-11-04,High,Resolved,2024-11-06,2,Amount credited to account after investigation
+Q00032,Duplicate Charge,HDFC2026470758,2024-11-18,Medium,Resolved,2024-11-26,8,Duplicate identified and refunded
+Q00033,Payment Delay,HDFC2026892663,2024-02-27,High,In Progress,2024-02-29,2,"Checked with bank, payment en route"
+Q00034,Document Request,HDFC2026479637,2024-07-08,Low,Closed,2024-07-15,7,Documents provided to customer
+Q00035,FX Rate Query,HDFC2026290054,2024-08-16,Medium,Resolved,2024-08-24,8,"Current rate 106.98, explained to customer"
+Q00036,Settlement Inquiry,HDFC2026565497,2024-11-21,Medium,Closed,2024-11-28,7,"Settlement confirmed, documentation sent"
+Q00037,FX Rate Query,HDFC2026266258,2024-04-19,Medium,Closed,2024-04-28,9,"Current rate 22.66, explained to customer"
+Q00038,FX Rate Query,HDFC2026400579,2024-01-27,Low,Closed,2024-01-30,3,"Current rate 22.46, explained to customer"
+Q00039,Amount Discrepancy,HDFC2026236927,2024-08-16,Low,Closed,2024-08-18,2,"Discrepancy resolved, documentation provided"
+Q00040,Missing Credit,HDFC2026222805,2024-10-26,Medium,Resolved,2024-11-01,6,Amount credited to account after investigation
+Q00041,Compliance Check,HDFC2026757070,2024-06-20,Medium,In Progress,2024-06-21,1,"Verification completed, transaction approved"
+Q00042,FX Rate Query,HDFC2026493019,2024-03-17,Medium,Closed,2024-03-19,2,"Current rate 60.51, explained to customer"
+Q00043,Duplicate Charge,HDFC2026910555,2024-02-21,Medium,Resolved,2024-03-02,10,Duplicate identified and refunded
+Q00044,Payment Delay,HDFC2026147859,2024-03-09,High,Closed,2024-03-10,1,"Checked with bank, payment en route"
+Q00045,Amount Discrepancy,HDFC2026163714,2024-04-03,Low,Escalated,2024-04-07,4,"Discrepancy resolved, documentation provided"
+Q00046,Amount Discrepancy,HDFC2026846189,2024-12-19,Medium,Closed,2024-12-21,2,"Discrepancy resolved, documentation provided"
+Q00047,Settlement Inquiry,HDFC2026145948,2024-11-29,Medium,Closed,2024-11-30,1,"Settlement confirmed, documentation sent"
+Q00048,Compliance Check,HDFC2026766415,2024-12-19,Medium,In Progress,2024-12-22,3,"Verification completed, transaction approved"
+Q00049,Missing Credit,HDFC2026856755,2024-10-26,High,Resolved,2024-11-03,8,Amount credited to account after investigation
+Q00050,FX Rate Query,HDFC2026423003,2024-02-10,Low,Closed,2024-02-17,7,"Current rate 104.83, explained to customer"
+Q00051,Duplicate Charge,HDFC2026929026,2024-02-01,High,Resolved,2024-02-02,1,Duplicate identified and refunded
+Q00052,Duplicate Charge,HDFC2026384739,2024-01-08,High,Resolved,2024-01-14,6,Duplicate identified and refunded
+Q00053,Duplicate Charge,HDFC2026149292,2024-08-25,High,Resolved,2024-09-03,9,Duplicate identified and refunded
+Q00054,Document Request,HDFC2026230860,2024-08-14,Medium,Resolved,2024-08-18,4,Documents provided to customer
+Q00055,Payment Delay,HDFC2026641058,2024-04-02,High,Resolved,2024-04-09,7,"Checked with bank, payment en route"
+Q00056,FX Rate Query,HDFC2026426529,2024-07-31,Low,In Progress,2024-08-03,3,"Current rate 62.36, explained to customer"
+Q00057,Amount Discrepancy,HDFC2026346881,2024-08-10,Medium,Escalated,2024-08-17,7,"Discrepancy resolved, documentation provided"
+Q00058,Payment Delay,HDFC2026492047,2024-05-09,High,In Progress,2024-05-12,3,"Checked with bank, payment en route"
+Q00059,Settlement Inquiry,HDFC2026197730,2024-01-24,Low,Closed,2024-01-31,7,"Settlement confirmed, documentation sent"
+Q00060,Document Request,HDFC2026502457,2024-05-23,Low,Resolved,2024-05-28,5,Documents provided to customer
+Q00061,Payment Delay,HDFC2026975078,2024-05-24,Medium,Closed,2024-05-25,1,"Checked with bank, payment en route"
+Q00062,Compliance Check,HDFC2026749908,2024-08-21,Medium,Escalated,2024-08-26,5,"Verification completed, transaction approved"
+Q00063,Document Request,HDFC2026426595,2024-04-23,Medium,Closed,2024-05-01,8,Documents provided to customer
+Q00064,Duplicate Charge,HDFC2026925100,2024-08-18,Medium,Resolved,2024-08-23,5,Duplicate identified and refunded
+Q00065,FX Rate Query,HDFC2026888007,2024-11-17,Low,In Progress,2024-11-18,1,"Current rate 61.99, explained to customer"
+Q00066,Payment Delay,HDFC2026146587,2024-03-06,High,Closed,2024-03-14,8,"Checked with bank, payment en route"
+Q00067,Amount Discrepancy,HDFC2026715473,2024-05-25,Low,In Progress,2024-05-27,2,"Discrepancy resolved, documentation provided"
+Q00068,Payment Delay,HDFC2026933175,2024-03-14,High,Closed,2024-03-24,10,"Checked with bank, payment en route"
+Q00069,Missing Credit,HDFC2026805796,2024-01-30,High,Resolved,2024-02-05,6,Amount credited to account after investigation
+Q00070,Payment Delay,HDFC2026372494,2025-01-02,High,Escalated,2025-01-08,6,"Checked with bank, payment en route"
+Q00071,FX Rate Query,HDFC2026365503,2024-10-27,Low,Resolved,2024-11-03,7,"Current rate 23.07, explained to customer"
+Q00072,Settlement Inquiry,HDFC2026840967,2024-06-30,Low,Closed,2024-07-10,10,"Settlement confirmed, documentation sent"
+Q00073,Amount Discrepancy,HDFC2026865777,2024-08-05,Low,Closed,2024-08-06,1,"Discrepancy resolved, documentation provided"
+Q00074,Settlement Inquiry,HDFC2026614366,2024-03-03,Low,In Progress,2024-03-04,1,"Settlement confirmed, documentation sent"
+Q00075,FX Rate Query,HDFC2026173327,2024-11-12,Low,Pending,2024-11-13,1,"Current rate 54.73, explained to customer"
+Q00076,Payment Delay,HDFC2026543089,2024-07-25,Medium,Resolved,2024-07-28,3,"Checked with bank, payment en route"
+Q00077,Document Request,HDFC2026707707,2024-10-03,Medium,Resolved,2024-10-09,6,Documents provided to customer
+Q00078,Document Request,HDFC2026936381,2024-11-29,Medium,Resolved,2024-12-04,5,Documents provided to customer
+Q00079,Missing Credit,HDFC2026612333,2024-11-05,High,Resolved,2024-11-10,5,Amount credited to account after investigation
+Q00080,Missing Credit,HDFC2026382781,2024-07-03,High,Resolved,2024-07-08,5,Amount credited to account after investigation
+Q00081,Amount Discrepancy,HDFC2026901520,2024-11-14,Low,Resolved,2024-11-21,7,"Discrepancy resolved, documentation provided"
+Q00082,Payment Delay,HDFC2026320091,2024-11-13,High,Closed,2024-11-20,7,"Checked with bank, payment en route"
+Q00083,Payment Delay,HDFC2026451329,2024-11-04,High,Resolved,2024-11-13,9,"Checked with bank, payment en route"
+Q00084,Settlement Inquiry,HDFC2026179532,2024-12-18,Low,Closed,2024-12-27,9,"Settlement confirmed, documentation sent"
+Q00085,Payment Delay,HDFC2026391941,2024-06-06,High,Pending,2024-06-08,2,"Checked with bank, payment en route"
+Q00086,FX Rate Query,HDFC2026778700,2024-07-30,Low,Escalated,2024-08-03,4,"Current rate 55.2, explained to customer"
+Q00087,FX Rate Query,HDFC2026193968,2024-10-24,Low,Resolved,2024-10-26,2,"Current rate 83.08, explained to customer"
+Q00088,FX Rate Query,HDFC2026925977,2024-09-22,Low,Closed,2024-09-25,3,"Current rate 82.31, explained to customer"
+Q00089,Missing Credit,HDFC2026939307,2024-03-15,Medium,Resolved,2024-03-23,8,Amount credited to account after investigation
+Q00090,Payment Delay,HDFC2026274025,2024-06-26,Medium,Closed,2024-06-27,1,"Checked with bank, payment en route"
+Q00091,Compliance Check,HDFC2026230252,2024-12-14,Medium,In Progress,2024-12-16,2,"Verification completed, transaction approved"
+Q00092,Document Request,HDFC2026869109,2024-11-15,Low,Escalated,2024-11-19,4,Documents provided to customer
+Q00093,Settlement Inquiry,HDFC2026939871,2024-04-06,Medium,Resolved,2024-04-15,9,"Settlement confirmed, documentation sent"
+Q00094,FX Rate Query,HDFC2026853270,2024-05-21,Low,Resolved,2024-05-28,7,"Current rate 22.66, explained to customer"
+Q00095,Document Request,HDFC2026978083,2024-10-31,Low,Escalated,2024-11-03,3,Documents provided to customer
+Q00096,Payment Delay,HDFC2026457766,2024-03-05,Medium,In Progress,2024-03-07,2,"Checked with bank, payment en route"
+Q00097,Missing Credit,HDFC2026748167,2024-08-03,High,In Progress,2024-08-06,3,Amount credited to account after investigation
+Q00098,Settlement Inquiry,HDFC2026305171,2024-02-03,Medium,Resolved,2024-02-06,3,"Settlement confirmed, documentation sent"
+Q00099,Missing Credit,HDFC2026521385,2024-10-27,High,Resolved,2024-10-31,4,Amount credited to account after investigation
+Q00100,FX Rate Query,HDFC2026563912,2024-07-20,Low,Resolved,2024-07-21,1,"Current rate 22.88, explained to customer"
+Q00101,Duplicate Charge,HDFC2026613022,2024-03-19,Medium,Resolved,2024-03-24,5,Duplicate identified and refunded
+Q00102,Compliance Check,HDFC2026915509,2024-08-29,Medium,In Progress,2024-08-30,1,"Verification completed, transaction approved"
+Q00103,Document Request,HDFC2026146981,2024-03-26,Medium,Resolved,2024-03-29,3,Documents provided to customer
+Q00104,Missing Credit,HDFC2026923039,2024-01-12,High,Resolved,2024-01-22,10,Amount credited to account after investigation
+Q00105,Compliance Check,HDFC2026129358,2024-12-30,Medium,Resolved,2025-01-05,6,"Verification completed, transaction approved"
+Q00106,Amount Discrepancy,HDFC2026347096,2024-11-29,Medium,Resolved,2024-12-01,2,"Discrepancy resolved, documentation provided"
+Q00107,Missing Credit,HDFC2026795774,2024-04-15,High,Escalated,2024-04-22,7,Amount credited to account after investigation
+Q00108,Amount Discrepancy,HDFC2026538651,2024-04-04,Medium,Resolved,2024-04-10,6,"Discrepancy resolved, documentation provided"
+Q00109,FX Rate Query,HDFC2026227095,2024-12-14,Low,Escalated,2024-12-19,5,"Current rate 105.51, explained to customer"
+Q00110,FX Rate Query,HDFC2026685027,2024-03-01,Low,In Progress,2024-03-03,2,"Current rate 55.91, explained to customer"
+Q00111,Payment Delay,HDFC2026162833,2024-03-16,Medium,Closed,2024-03-24,8,"Checked with bank, payment en route"
+Q00112,Duplicate Charge,HDFC2026916528,2024-08-31,Medium,Pending,2024-09-01,1,Duplicate identified and refunded
+Q00113,Amount Discrepancy,HDFC2026586786,2024-08-05,Medium,Resolved,2024-08-09,4,"Discrepancy resolved, documentation provided"
+Q00114,Settlement Inquiry,HDFC2026377487,2024-07-07,Medium,Pending,2024-07-08,1,"Settlement confirmed, documentation sent"
+Q00115,FX Rate Query,HDFC2026465271,2024-12-29,Low,Resolved,2025-01-05,7,"Current rate 23.1, explained to customer"
+Q00116,Duplicate Charge,HDFC2026761257,2024-09-23,High,Closed,2024-10-03,10,Duplicate identified and refunded
+Q00117,Settlement Inquiry,HDFC2026767349,2024-03-31,Low,Resolved,2024-04-02,2,"Settlement confirmed, documentation sent"
+Q00118,Missing Credit,HDFC2026308635,2024-04-13,High,Closed,2024-04-14,1,Amount credited to account after investigation
+Q00119,Settlement Inquiry,HDFC2026671208,2024-09-30,Low,Resolved,2024-10-06,6,"Settlement confirmed, documentation sent"
+Q00120,FX Rate Query,HDFC2026973787,2024-09-17,Low,Closed,2024-09-21,4,"Current rate 103.84, explained to customer"
+Q00121,Compliance Check,HDFC2026146822,2024-02-10,Medium,Resolved,2024-02-14,4,"Verification completed, transaction approved"
+Q00122,Document Request,HDFC2026319233,2024-05-02,Low,Closed,2024-05-08,6,Documents provided to customer
+Q00123,Duplicate Charge,HDFC2026131470,2024-11-13,Medium,Resolved,2024-11-17,4,Duplicate identified and refunded
+Q00124,Settlement Inquiry,HDFC2026839184,2024-04-11,Medium,Resolved,2024-04-17,6,"Settlement confirmed, documentation sent"
+Q00125,Compliance Check,HDFC2026141647,2024-04-12,High,In Progress,2024-04-13,1,"Verification completed, transaction approved"
+Q00126,Settlement Inquiry,HDFC2026677693,2024-06-17,Medium,Closed,2024-06-27,10,"Settlement confirmed, documentation sent"
+Q00127,Payment Delay,HDFC2026952215,2024-04-30,High,Resolved,2024-05-03,3,"Checked with bank, payment en route"
+Q00128,Document Request,HDFC2026932923,2024-12-27,Low,Resolved,2025-01-06,10,Documents provided to customer
+Q00129,Amount Discrepancy,HDFC2026117213,2024-05-30,Medium,Escalated,2024-06-02,3,"Discrepancy resolved, documentation provided"
+Q00130,Payment Delay,HDFC2026870723,2024-10-04,High,Resolved,2024-10-13,9,"Checked with bank, payment en route"
+Q00131,FX Rate Query,HDFC2026884673,2024-08-16,Low,Resolved,2024-08-19,3,"Current rate 61.32, explained to customer"
+Q00132,Payment Delay,HDFC2026449636,2024-12-16,High,Closed,2024-12-20,4,"Checked with bank, payment en route"
+Q00133,Missing Credit,HDFC2026156962,2024-08-25,High,Resolved,2024-08-27,2,Amount credited to account after investigation
+Q00134,Payment Delay,HDFC2026435803,2024-08-04,Medium,In Progress,2024-08-06,2,"Checked with bank, payment en route"
+Q00135,Compliance Check,HDFC2026747966,2024-06-02,Medium,In Progress,2024-06-05,3,"Verification completed, transaction approved"
+Q00136,Settlement Inquiry,HDFC2026804007,2024-03-11,Low,In Progress,2024-03-13,2,"Settlement confirmed, documentation sent"
+Q00137,Duplicate Charge,HDFC2026433554,2024-10-28,Medium,In Progress,2024-10-29,1,Duplicate identified and refunded
+Q00138,Payment Delay,HDFC2026829685,2024-07-22,High,Escalated,2024-07-28,6,"Checked with bank, payment en route"
+Q00139,FX Rate Query,HDFC2026874594,2024-09-09,Medium,Closed,2024-09-13,4,"Current rate 84.47, explained to customer"
+Q00140,Duplicate Charge,HDFC2026448127,2024-10-11,Medium,Closed,2024-10-18,7,Duplicate identified and refunded
+Q00141,FX Rate Query,HDFC2026304222,2024-01-12,Low,Resolved,2024-01-21,9,"Current rate 84.28, explained to customer"
+Q00142,Amount Discrepancy,HDFC2026251830,2024-02-25,Medium,Resolved,2024-03-03,7,"Discrepancy resolved, documentation provided"
+Q00143,FX Rate Query,HDFC2026962200,2024-04-18,Low,Closed,2024-04-26,8,"Current rate 82.33, explained to customer"
+Q00144,FX Rate Query,HDFC2026981537,2024-05-20,Low,Resolved,2024-05-23,3,"Current rate 17.3, explained to customer"
+Q00145,Settlement Inquiry,HDFC2026321385,2024-03-14,Low,Resolved,2024-03-21,7,"Settlement confirmed, documentation sent"
+Q00146,FX Rate Query,HDFC2026170332,2024-07-14,Medium,Resolved,2024-07-15,1,"Current rate 84.5, explained to customer"
+Q00147,Document Request,HDFC2026445850,2024-09-06,Low,Closed,2024-09-11,5,Documents provided to customer
+Q00148,Settlement Inquiry,HDFC2026999099,2024-02-03,Low,Resolved,2024-02-08,5,"Settlement confirmed, documentation sent"
+Q00149,Settlement Inquiry,HDFC2026768663,2024-07-07,Medium,Resolved,2024-07-11,4,"Settlement confirmed, documentation sent"
+Q00150,Duplicate Charge,HDFC2026690349,2024-03-05,Medium,Escalated,2024-03-09,4,Duplicate identified and refunded
+Q00151,Amount Discrepancy,HDFC2026588710,2024-09-10,Medium,Resolved,2024-09-14,4,"Discrepancy resolved, documentation provided"
+Q00152,Compliance Check,HDFC2026588325,2024-10-31,High,Resolved,2024-11-05,5,"Verification completed, transaction approved"
+Q00153,Compliance Check,HDFC2026820104,2024-06-21,Medium,Resolved,2024-06-24,3,"Verification completed, transaction approved"
+Q00154,Amount Discrepancy,HDFC2026584569,2024-06-19,Low,In Progress,2024-06-21,2,"Discrepancy resolved, documentation provided"
+Q00155,Duplicate Charge,HDFC2026979236,2024-06-20,High,Resolved,2024-06-25,5,Duplicate identified and refunded
+Q00156,Missing Credit,HDFC2026740011,2024-04-07,High,Resolved,2024-04-17,10,Amount credited to account after investigation
+Q00157,Duplicate Charge,HDFC2026460351,2024-01-24,High,Resolved,2024-01-31,7,Duplicate identified and refunded
+Q00158,Payment Delay,HDFC2026738626,2024-06-16,High,Resolved,2024-06-20,4,"Checked with bank, payment en route"
+Q00159,Document Request,HDFC2026607206,2024-03-26,Low,Closed,2024-03-28,2,Documents provided to customer
+Q00160,Missing Credit,HDFC2026719334,2024-12-24,High,Closed,2025-01-01,8,Amount credited to account after investigation
+Q00161,FX Rate Query,HDFC2026937962,2024-05-15,Medium,Closed,2024-05-19,4,"Current rate 84.45, explained to customer"
+Q00162,FX Rate Query,HDFC2026695926,2024-11-08,Low,Closed,2024-11-14,6,"Current rate 22.43, explained to customer"
+Q00163,Payment Delay,HDFC2026983555,2024-12-16,High,Resolved,2024-12-17,1,"Checked with bank, payment en route"
+Q00164,Document Request,HDFC2026220570,2024-07-23,Low,Closed,2024-07-25,2,Documents provided to customer
+Q00165,Duplicate Charge,HDFC2026808267,2024-05-08,Medium,Escalated,2024-05-14,6,Duplicate identified and refunded
+Q00166,Settlement Inquiry,HDFC2026231250,2024-11-21,Low,Resolved,2024-11-29,8,"Settlement confirmed, documentation sent"
+Q00167,Compliance Check,HDFC2026838246,2024-03-12,Medium,Escalated,2024-03-17,5,"Verification completed, transaction approved"
+Q00168,FX Rate Query,HDFC2026929776,2024-08-06,Medium,Closed,2024-08-08,2,"Current rate 83.48, explained to customer"
+Q00169,Compliance Check,HDFC2026236384,2024-03-25,Medium,Resolved,2024-04-01,7,"Verification completed, transaction approved"
+Q00170,Document Request,HDFC2026424314,2024-12-09,Low,Escalated,2024-12-13,4,Documents provided to customer
+Q00171,Compliance Check,HDFC2026898936,2024-09-14,Medium,Resolved,2024-09-24,10,"Verification completed, transaction approved"
+Q00172,Amount Discrepancy,HDFC2026545790,2024-02-29,Low,Resolved,2024-03-07,7,"Discrepancy resolved, documentation provided"
+Q00173,Duplicate Charge,HDFC2026169767,2024-12-19,Medium,Resolved,2024-12-22,3,Duplicate identified and refunded
+Q00174,Compliance Check,HDFC2026429349,2024-05-19,Medium,Closed,2024-05-29,10,"Verification completed, transaction approved"
+Q00175,Document Request,HDFC2026170167,2024-04-01,Medium,Resolved,2024-04-09,8,Documents provided to customer
+Q00176,Duplicate Charge,HDFC2026450330,2024-09-15,Medium,Resolved,2024-09-17,2,Duplicate identified and refunded
+Q00177,Amount Discrepancy,HDFC2026693731,2024-05-04,Medium,Resolved,2024-05-05,1,"Discrepancy resolved, documentation provided"
+Q00178,Compliance Check,HDFC2026968777,2024-11-05,Medium,Closed,2024-11-07,2,"Verification completed, transaction approved"
+Q00179,Payment Delay,HDFC2026527047,2024-12-01,Medium,Closed,2024-12-03,2,"Checked with bank, payment en route"
+Q00180,Missing Credit,HDFC2026716705,2024-11-20,High,Closed,2024-11-21,1,Amount credited to account after investigation
+Q00181,Missing Credit,HDFC2026814670,2024-09-28,Medium,Resolved,2024-10-01,3,Amount credited to account after investigation
+Q00182,Payment Delay,HDFC2026139562,2024-03-30,Medium,Closed,2024-04-03,4,"Checked with bank, payment en route"
+Q00183,Settlement Inquiry,HDFC2026509348,2024-11-22,Medium,Escalated,2024-11-25,3,"Settlement confirmed, documentation sent"
+Q00184,Duplicate Charge,HDFC2026542788,2024-04-12,Medium,Closed,2024-04-18,6,Duplicate identified and refunded
+Q00185,Payment Delay,HDFC2026798200,2024-07-14,High,Resolved,2024-07-18,4,"Checked with bank, payment en route"
+Q00186,FX Rate Query,HDFC2026953779,2024-12-14,Low,Closed,2024-12-22,8,"Current rate 85.04, explained to customer"
+Q00187,FX Rate Query,HDFC2026306645,2024-01-07,Medium,Resolved,2024-01-09,2,"Current rate 82.87, explained to customer"
+Q00188,Missing Credit,HDFC2026826899,2024-02-26,Medium,Resolved,2024-02-29,3,Amount credited to account after investigation
+Q00189,Compliance Check,HDFC2026614150,2024-08-22,Medium,Resolved,2024-08-23,1,"Verification completed, transaction approved"
+Q00190,Payment Delay,HDFC2026683357,2024-12-21,High,Resolved,2024-12-23,2,"Checked with bank, payment en route"
+Q00191,Missing Credit,HDFC2026340723,2024-10-04,High,In Progress,2024-10-05,1,Amount credited to account after investigation
+Q00192,FX Rate Query,HDFC2026679095,2024-11-27,Low,Closed,2024-12-05,8,"Current rate 61.18, explained to customer"
+Q00193,FX Rate Query,HDFC2026768391,2024-03-16,Low,Resolved,2024-03-23,7,"Current rate 85.07, explained to customer"
+Q00194,Missing Credit,HDFC2026926185,2024-03-06,High,In Progress,2024-03-07,1,Amount credited to account after investigation
+Q00195,FX Rate Query,HDFC2026410423,2024-09-19,Low,Closed,2024-09-27,8,"Current rate 61.26, explained to customer"
+Q00196,Duplicate Charge,HDFC2026761475,2024-08-22,Medium,Resolved,2024-08-29,7,Duplicate identified and refunded
+Q00197,FX Rate Query,HDFC2026851431,2024-07-23,Low,Resolved,2024-08-01,9,"Current rate 82.45, explained to customer"
+Q00198,Document Request,HDFC2026596436,2024-10-23,Low,In Progress,2024-10-25,2,Documents provided to customer
+Q00199,Compliance Check,HDFC2026982372,2024-03-22,Medium,Resolved,2024-03-24,2,"Verification completed, transaction approved"
+Q00200,Amount Discrepancy,HDFC2026991297,2024-01-05,Low,Closed,2024-01-14,9,"Discrepancy resolved, documentation provided"
