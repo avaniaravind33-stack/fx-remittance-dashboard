@@ -268,108 +268,161 @@ def generate_html_dashboard(df, kpis):
 
             body {{
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-                background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
                 min-height: 100vh;
-                padding: 20px;
+                padding: 30px 20px;
+                color: #e2e8f0;
             }}
 
             .container {{
-                max-width: 1600px;
+                max-width: 1700px;
                 margin: 0 auto;
             }}
 
             .header {{
-                background: linear-gradient(135deg, #203A5F 0%, #366092 100%);
+                background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 50%, #0c4a6e 100%);
                 color: white;
-                padding: 40px 20px;
-                border-radius: 10px;
-                margin-bottom: 30px;
-                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                padding: 60px 40px;
+                border-radius: 16px;
+                margin-bottom: 40px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 60px rgba(30, 64, 175, 0.2);
+                position: relative;
+                overflow: hidden;
+            }}
+
+            .header::before {{
+                content: '';
+                position: absolute;
+                top: -50%;
+                right: -10%;
+                width: 500px;
+                height: 500px;
+                background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+                border-radius: 50%;
             }}
 
             .header h1 {{
-                font-size: 2.5em;
-                margin-bottom: 10px;
-                font-weight: 700;
+                font-size: 3em;
+                margin-bottom: 15px;
+                font-weight: 800;
+                letter-spacing: -1px;
+                position: relative;
+                z-index: 1;
             }}
 
             .header p {{
-                font-size: 1.1em;
-                opacity: 0.9;
+                font-size: 1.2em;
+                opacity: 0.95;
+                position: relative;
+                z-index: 1;
+                font-weight: 300;
             }}
 
             .reporting-date {{
-                font-size: 0.9em;
+                font-size: 0.95em;
                 opacity: 0.8;
-                margin-top: 10px;
+                margin-top: 15px;
+                position: relative;
+                z-index: 1;
+                font-weight: 400;
             }}
 
             .kpi-section {{
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 20px;
-                margin-bottom: 30px;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 25px;
+                margin-bottom: 45px;
             }}
 
             .kpi-card {{
-                background: white;
-                padding: 25px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                padding: 30px;
+                border-radius: 12px;
+                border: 1px solid #334155;
                 text-align: center;
-                transition: transform 0.3s, box-shadow 0.3s;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+            }}
+
+            .kpi-card::before {{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+                transition: left 0.5s;
+            }}
+
+            .kpi-card:hover::before {{
+                left: 100%;
             }}
 
             .kpi-card:hover {{
-                transform: translateY(-5px);
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 15px 40px rgba(30, 64, 175, 0.2), 0 0 30px rgba(59, 130, 246, 0.1);
+                border-color: #3b82f6;
             }}
 
             .kpi-label {{
-                font-size: 0.9em;
-                color: #666;
-                margin-bottom: 10px;
-                font-weight: 500;
+                font-size: 0.85em;
+                color: #94a3b8;
+                margin-bottom: 12px;
+                font-weight: 600;
                 text-transform: uppercase;
+                letter-spacing: 1px;
             }}
 
             .kpi-value {{
-                font-size: 2em;
-                font-weight: 700;
-                color: #203A5F;
+                font-size: 2.2em;
+                font-weight: 800;
+                color: #3b82f6;
+                margin-bottom: 5px;
             }}
 
             .kpi-value.success {{
-                color: #70AD47;
+                color: #10b981;
             }}
 
             .kpi-value.warning {{
-                color: #FFC000;
+                color: #f59e0b;
             }}
 
             .kpi-value.danger {{
-                color: #C00000;
+                color: #ef4444;
             }}
 
             .charts-section {{
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-                gap: 30px;
-                margin-bottom: 30px;
+                gap: 35px;
+                margin-bottom: 40px;
             }}
 
             .chart-container {{
-                background: white;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                padding: 30px;
+                border-radius: 12px;
+                border: 1px solid #334155;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                transition: all 0.3s ease;
+            }}
+
+            .chart-container:hover {{
+                border-color: #3b82f6;
+                box-shadow: 0 15px 40px rgba(30, 64, 175, 0.2);
             }}
 
             .chart-title {{
-                font-size: 1.2em;
-                font-weight: 600;
-                color: #203A5F;
-                margin-bottom: 15px;
+                font-size: 1.3em;
+                font-weight: 700;
+                color: #e2e8f0;
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid #334155;
             }}
 
             .full-width {{
@@ -378,24 +431,44 @@ def generate_html_dashboard(df, kpis):
 
             footer {{
                 text-align: center;
-                color: #666;
-                margin-top: 50px;
-                padding: 20px;
-                background: white;
-                border-radius: 8px;
+                color: #94a3b8;
+                margin-top: 60px;
+                padding: 30px;
+                background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+                border-radius: 12px;
+                border: 1px solid #334155;
+                font-size: 0.95em;
+            }}
+
+            footer p {{
+                margin: 8px 0;
             }}
 
             @media (max-width: 768px) {{
+                .header {{
+                    padding: 40px 25px;
+                }}
+
                 .header h1 {{
-                    font-size: 1.8em;
+                    font-size: 2em;
                 }}
 
                 .charts-section {{
                     grid-template-columns: 1fr;
+                    gap: 25px;
                 }}
 
                 .kpi-section {{
                     grid-template-columns: repeat(2, 1fr);
+                    gap: 15px;
+                }}
+
+                .kpi-card {{
+                    padding: 20px;
+                }}
+
+                .kpi-value {{
+                    font-size: 1.8em;
                 }}
             }}
         </style>
@@ -403,9 +476,9 @@ def generate_html_dashboard(df, kpis):
     <body>
         <div class="container">
             <div class="header">
-                <h1>🏦 HDFC FX Remittance Operations Dashboard</h1>
-                <p>Real-time analytics for international remittance processing</p>
-                <div class="reporting-date">Dashboard generated on {datetime.now().strftime('%B %d, %Y at %H:%M:%S')}</div>
+                <h1>🏦 HDFC FX Remittance Operations</h1>
+                <p>Real-time Analytics Dashboard</p>
+                <div class="reporting-date">Last updated {datetime.now().strftime('%B %d, %Y • %H:%M UTC')}</div>
             </div>
 
             <div class="kpi-section">
@@ -469,8 +542,8 @@ def generate_html_dashboard(df, kpis):
             </div>
 
             <footer>
-                <p><strong>HDFC Bank FX Remittance Operations & MIS Dashboard</strong></p>
-                <p>Data source: Simulated transaction dataset | Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+                <p><strong>HDFC Bank FX Remittance Operations Dashboard</strong></p>
+                <p>International Remittance Analytics | Data source: Simulated transaction dataset</p>
             </footer>
         </div>
     </body>
