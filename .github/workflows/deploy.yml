@@ -48,7 +48,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A
+          git add data/ excel/ website/index.html
           git diff --quiet && git diff --staged --quiet || git commit -m "Auto-generated: Updated dashboards and data [skip ci]"
 
       - name: Push changes
