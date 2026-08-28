@@ -330,8 +330,7 @@ This project is open source and available under the MIT License.
 ## Contact & Support
 
 For questions or suggestions:
-- 📧 Email: aravind@example.com
-- 💼 LinkedIn: [Your Profile]
+- 📧 Email: avaniaravind33@gmail.com
 - 🐙 GitHub: @avaniaravind33-stack
 
 ---
